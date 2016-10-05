@@ -1,13 +1,9 @@
-// http://stackoverflow.com/questions/35040978/babel-unexpected-token-import-when-running-mocha-tests
-
 import { createStore, Store, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
 
-import bsdmReducer from 'bsdm/src/reducers/index';
-// const bsDmReducer = require("bsdm/src/reducers/index");
+import bsdmReducer from 'bsdm/dist/reducers/index';
 
-import { baNewSign } from 'bsdm/src/bsDmActions';
-// const baNewSign = require("bsdm/src/bsDmActions");
+import { baNewSign } from 'bsdm/dist/bsDmActions';
 
 console.log("start test");
 
